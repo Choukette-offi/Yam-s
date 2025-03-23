@@ -34,7 +34,7 @@ des = [random.randint(1, 6) for _ in range(5)]  # 5 dés générés aléatoireme
 des_selectionnes = [False] * 5  # État de sélection des dés
 
 # Chargement des images des dés
-dice_images = {i: pygame.image.load(f"de{i}.png") for i in range(1, 7)}
+dice_images = {i: pygame.image.load(f"./YamsGame/Yams_Image/Face_{i}.png") for i in range(1, 7)}
 
 # Fonction pour lancer les dés
 def lancer_des():
