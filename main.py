@@ -1,5 +1,5 @@
 import os
-os.system('cls')
+os.system('clear')
 Joueur = [
     'Mamie',
     'Maman',
@@ -7,7 +7,7 @@ Joueur = [
 
 nb_j = input("Combien y'a t'il de joueur :")
 for _ in range(int(nb_j)):
-    os.system('cls')
+    os.system('clear')
     nom = input('Nom du joueur :')
     Joueur.append(nom)
 
@@ -264,55 +264,55 @@ def lancement_du_jeu(regle, joueur):
     initialisation(joueur)
     for tour in range(13):
         for nom in joueur:
-            os.system('cls')
+            os.system('clear')
             interface(regle,Joueur)
             print("C'est au tour de " + nom)
             resultat = verificateur(["o", "n"], 0)
             if resultat == 'n':
                 choix= verificateur(["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], 1)
                 if choix == "0":
-                    os.system('cls')
+                    os.system('clear')
                     un(nom)
                 elif choix == "1":
-                    os.system('cls')
+                    os.system('clear')
                     deux(nom)
                 elif choix == "2": 
-                    os.system('cls')
+                    os.system('clear')
                     trois(nom)
                 elif choix == "3":
-                    os.system('cls')
+                    os.system('clear')
                     quatre(nom)
                 elif choix == "4":
-                    os.system('cls')
+                    os.system('clear')
                     cinq(nom)
                 elif choix == "5":
-                    os.system('cls')
+                    os.system('clear')
                     six(nom)
                 elif choix == "6":
-                    os.system('cls')
+                    os.system('clear')
                     Chance(nom)
                 elif choix == "7":
-                    os.system('cls')
+                    os.system('clear')
                     Brelan(nom)
                 elif choix == "8":
-                    os.system('cls')
+                    os.system('clear')
                     Carré(nom)
                 elif choix == "9":
-                    os.system('cls')
+                    os.system('clear')
                     Full(nom)
                 elif choix == "10":
-                    os.system('cls')
+                    os.system('clear')
                     Petite_Suite(nom)
                 elif choix == "11":
-                    os.system('cls')
+                    os.system('clear')
                     Grande_Suite(nom)
                 elif choix == "12":
-                    os.system('cls')
+                    os.system('clear')
                     Yam_s(nom)
             elif resultat == 'o':
                 eliminer(nom)
                 
-    os.system('cls')
+    os.system('clear')
     interface(regle, joueur)
     print('La partie est finit !!!')
     print("Le gagnant est : " + Gagnant(joueur))
